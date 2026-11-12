@@ -63,7 +63,7 @@ jobs:
         run: pnpm android:init
 
       - name: Build APK
-        run: pnpm android:build
+        run: pnpm android:build -- --target aarch64
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
